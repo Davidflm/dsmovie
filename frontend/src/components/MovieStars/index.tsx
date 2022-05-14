@@ -38,20 +38,20 @@ function Star({ fill }: StarProps) {
         return <StarHalf />
     }
 }
-    function MovieStars({ score }: Props) {
+function MovieStars({ score }: Props) {
 
-        const fills = getFills(score);
+    const fills = getFills(score);
 
-        return (
-            <div className="dsmovie-stars-container">
-                <Star fill={fills[0]} />
-                <Star fill={fills[1]} />
-                <Star fill={fills[2]} />
-                <Star fill={fills[3]} />
-                <Star fill={fills[4]} />
-            </div>
-        );
+    return (
+        <div className="dsmovie-stars-container">
+            <Star fill={fills[0]} />
+            <Star fill={fills[1]} />
+            <Star fill={fills[2]} />
+            <Star fill={fills[3]} />
+            <Star fill={fills[4]} />
+        </div>
+    );
 
-    }
+}
 
-    export default MovieStars;
+export default MovieStars;
